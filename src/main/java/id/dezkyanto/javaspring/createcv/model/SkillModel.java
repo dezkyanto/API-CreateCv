@@ -1,19 +1,19 @@
 package id.dezkyanto.javaspring.createcv.model;
 
-public class Skill {
+public class SkillModel {
 
 	private String skill;
 	private String percentage;
 	private String description;
 
-	public Skill(String skill, String percentage, String description) {
+	public SkillModel(String skill, String percentage, String description) {
 		super();
 		this.skill = skill;
 		this.percentage = percentage;
 		this.description = description;
 	}
 
-	public Skill() {
+	public SkillModel() {
 		super();
 		// TODO Auto-generated constructor stub
 	}

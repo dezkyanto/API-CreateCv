@@ -2,14 +2,14 @@ package id.dezkyanto.javaspring.createcv.model;
 
 import java.util.Date;
 
-public class Organization {
+public class OrganizationModel {
 
 	private String organizationName;
 	private Date start;
 	private Date end;
 	private String description;
 
-	public Organization(String organizationName, Date start, Date end, String description) {
+	public OrganizationModel(String organizationName, Date start, Date end, String description) {
 		super();
 		this.organizationName = organizationName;
 		this.start = start;
@@ -17,7 +17,7 @@ public class Organization {
 		this.description = description;
 	}
 
-	public Organization() {
+	public OrganizationModel() {
 		super();
 		// TODO Auto-generated constructor stub
 	}

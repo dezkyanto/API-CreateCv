@@ -2,7 +2,7 @@ package id.dezkyanto.javaspring.createcv.model;
 
 import java.util.Date;
 
-public class Education {
+public class EducationModel {
 
 	private String typeOfEducation;
 	private String nameOfInstitution;
@@ -10,7 +10,7 @@ public class Education {
 	private Date start;
 	private Date end;
 
-	public Education(String typeOfEducation, String nameOfInstitution, String institutionAddress, Date start,
+	public EducationModel(String typeOfEducation, String nameOfInstitution, String institutionAddress, Date start,
 			Date end) {
 		super();
 		this.typeOfEducation = typeOfEducation;
@@ -20,7 +20,7 @@ public class Education {
 		this.end = end;
 	}
 
-	public Education() {
+	public EducationModel() {
 		super();
 		// TODO Auto-generated constructor stub
 	}

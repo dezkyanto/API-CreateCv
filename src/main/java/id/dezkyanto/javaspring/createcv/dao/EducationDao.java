@@ -1,19 +1,19 @@
 package id.dezkyanto.javaspring.createcv.dao;
 
 import java.util.List;
-import id.dezkyanto.javaspring.createcv.model.Education;
+import id.dezkyanto.javaspring.createcv.model.EducationModel;
 
 public interface EducationDao {
 
-    public int insert(List<Education> education);
+    public int insert(List<EducationModel> education);
 	
-	public int update(List<Education> education, String idEducation);
+	public int update(List<EducationModel> education, String idEducation);
 	
-	public List<Education> getall();
+	public List<EducationModel> getall();
 	
-	public List<Education> getById(String idEducation);
+	public List<EducationModel> getById(String idEducation);
 	
-	public int removeById(List<Education> idEducation);
+	public int removeById(List<EducationModel> idEducation);
 	
 	public int removeAll();
 	

@@ -3,7 +3,7 @@ package id.dezkyanto.javaspring.createcv.model;
 import java.util.Date;
 import java.util.List;
 
-public class PersonalData {
+public class PersonalDataModel {
 
 	private String fullName;
 	private String placeOfBirth;
@@ -16,14 +16,14 @@ public class PersonalData {
 	private String motto;
 	private String hobbi;
 
-	private List<Education> education;
-	private List<Organization> organization;
-	private List<Skill> skill;
-	private List<WorkExperience> workExperience;
+	private List<EducationModel> education;
+	private List<OrganizationModel> organization;
+	private List<SkillModel> skill;
+	private List<WorkExperienceModel> workExperience;
 
-	public PersonalData(String fullName, String placeOfBirth, Date dateOfBirth, String address, String phoneNumber,
-			String email, String linkedin, String git, String motto, String hobbi, List<Education> education,
-			List<Organization> organization, List<Skill> skill, List<WorkExperience> workExperience) {
+	public PersonalDataModel(String fullName, String placeOfBirth, Date dateOfBirth, String address, String phoneNumber,
+			String email, String linkedin, String git, String motto, String hobbi, List<EducationModel> education,
+			List<OrganizationModel> organization, List<SkillModel> skill, List<WorkExperienceModel> workExperience) {
 		super();
 		this.fullName = fullName;
 		this.placeOfBirth = placeOfBirth;
@@ -41,7 +41,7 @@ public class PersonalData {
 		this.workExperience = workExperience;
 	}
 
-	public PersonalData() {
+	public PersonalDataModel() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -126,35 +126,35 @@ public class PersonalData {
 		this.hobbi = hobbi;
 	}
 
-	public List<Education> getEducation() {
+	public List<EducationModel> getEducation() {
 		return education;
 	}
 
-	public void setEducation(List<Education> education) {
+	public void setEducation(List<EducationModel> education) {
 		this.education = education;
 	}
 
-	public List<Organization> getOrganization() {
+	public List<OrganizationModel> getOrganization() {
 		return organization;
 	}
 
-	public void setOrganization(List<Organization> organization) {
+	public void setOrganization(List<OrganizationModel> organization) {
 		this.organization = organization;
 	}
 
-	public List<Skill> getSkill() {
+	public List<SkillModel> getSkill() {
 		return skill;
 	}
 
-	public void setSkill(List<Skill> skill) {
+	public void setSkill(List<SkillModel> skill) {
 		this.skill = skill;
 	}
 
-	public List<WorkExperience> getWorkExperience() {
+	public List<WorkExperienceModel> getWorkExperience() {
 		return workExperience;
 	}
 
-	public void setWorkExperience(List<WorkExperience> workExperience) {
+	public void setWorkExperience(List<WorkExperienceModel> workExperience) {
 		this.workExperience = workExperience;
 	}
 

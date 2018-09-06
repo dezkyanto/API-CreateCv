@@ -1,20 +1,22 @@
 package id.dezkyanto.javaspring.createcv.service;
 
 import java.util.List;
-import id.dezkyanto.javaspring.createcv.model.PersonalData;
+import id.dezkyanto.javaspring.createcv.model.PersonalDataModel;
 
 public interface CreateCvService {
 
-	public int insert(List<PersonalData> personalData);
+	public int insert(List<PersonalDataModel> personalData);
 
-	public int update(PersonalData personalData, String idPersonalData);
+	public int update(PersonalDataModel personalData, String idPersonalData);
 
-	public PersonalData getall();
+	public PersonalDataModel getall();
 
-	public PersonalData getById(String idPersonalData);
+	public PersonalDataModel getById(String idPersonalData);
 
 	public int removeById(String idPersonalData);
 
 	public int removeAll();
+	
+	public String test();
 
 }

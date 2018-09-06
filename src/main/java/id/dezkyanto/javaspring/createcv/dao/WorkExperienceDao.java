@@ -1,19 +1,19 @@
 package id.dezkyanto.javaspring.createcv.dao;
 
 import java.util.List;
-import id.dezkyanto.javaspring.createcv.model.WorkExperience;
+import id.dezkyanto.javaspring.createcv.model.WorkExperienceModel;
 
 public interface WorkExperienceDao {
 
-	public int insert(List<WorkExperience> workExperience);
+	public int insert(List<WorkExperienceModel> workExperience);
 
-	public int update(List<WorkExperience> workExperience, String idWorkExperience);
+	public int update(List<WorkExperienceModel> workExperience, String idWorkExperience);
 
-	public List<WorkExperience> getall();
+	public List<WorkExperienceModel> getall();
 
-	public List<WorkExperience> getById(String idWorkExperience);
+	public List<WorkExperienceModel> getById(String idWorkExperience);
 
-	public int removeById(List<WorkExperience> idWorkExperience);
+	public int removeById(List<WorkExperienceModel> idWorkExperience);
 
 	public int removeAll();
 	

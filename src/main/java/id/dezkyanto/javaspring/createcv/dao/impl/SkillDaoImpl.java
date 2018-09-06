@@ -5,7 +5,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import id.dezkyanto.javaspring.createcv.dao.PersonalDataDao;
-import id.dezkyanto.javaspring.createcv.model.PersonalData;
+import id.dezkyanto.javaspring.createcv.model.PersonalDataModel;
 
 
 @Transactional
@@ -16,13 +16,13 @@ public class SkillDaoImpl implements PersonalDataDao{
 	private JdbcTemplate jdbcTemplate;
 
 	@Override
-	public int insert(PersonalData personalData) {
+	public int insert(PersonalDataModel personalData) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int update(PersonalData personalData, String idPersonalData) {
+	public int update(PersonalDataModel personalData, String idPersonalData) {
 		// TODO Auto-generated method stub
 		return 0;
 	}

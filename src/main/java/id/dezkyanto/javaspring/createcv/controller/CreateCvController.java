@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import id.dezkyanto.javaspring.createcv.model.PersonalData;
+import id.dezkyanto.javaspring.createcv.model.PersonalDataModel;
 import id.dezkyanto.javaspring.createcv.service.CreateCvService;
 
 @RestController
@@ -22,22 +22,22 @@ public class CreateCvController {
 	private CreateCvService createCvService;
 
 	@PostMapping("insert")
-	public int insert(@RequestBody List<PersonalData> personalData) {
+	public int insert(@RequestBody List<PersonalDataModel> personalData) {
 		return createCvService.insert(personalData);
 	}
 
 	@PutMapping("update/{id}")
-	public int update(@RequestBody PersonalData personalData, @PathVariable("id") String idPersonalData) {
+	public int update(@RequestBody PersonalDataModel personalData, @PathVariable("id") String idPersonalData) {
 		return createCvService.update(personalData, idPersonalData);
 	}
 
 	@GetMapping("get-all")
-	public PersonalData getall() {
+	public PersonalDataModel getall() {
 		return createCvService.getall();
 	}
 
 	@GetMapping("get-id/{id}")
-	public PersonalData getById(@PathVariable("id") String idPersonalData) {
+	public PersonalDataModel getById(@PathVariable("id") String idPersonalData) {
 		return createCvService.getById(idPersonalData);
 	}
 
@@ -49,6 +49,11 @@ public class CreateCvController {
 	@DeleteMapping("remove-all")
 	public int removeAll() {
 		return createCvService.removeAll();
+	}
+	
+	@GetMapping("test")
+	public String test() {
+		return createCvService.test();
 	}
 
 }
