@@ -4,45 +4,53 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-import id.dezkyanto.javaspring.createcv.dao.CreateCvDao;
+import id.dezkyanto.javaspring.createcv.dao.PersonalDataDao;
 import id.dezkyanto.javaspring.createcv.model.PersonalData;
 
 
 @Transactional
 @Repository
-public class CreateCvDaoImpl implements CreateCvDao{
+public class OrganizationDaoImpl implements PersonalDataDao{
 
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 
 	@Override
-	public int insert() {
+	public int insert(PersonalData personalData) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int update() {
+	public int update(PersonalData personalData, String idPersonalData) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public PersonalData getall() {
+	public PersonalDataDao getall() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public PersonalData getById() {
+	public PersonalDataDao getById(String idPersonalData) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public int removeById() {
+	public int removeById(String idPersonalData) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
+
+	@Override
+	public int removeAll() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
 	
 }

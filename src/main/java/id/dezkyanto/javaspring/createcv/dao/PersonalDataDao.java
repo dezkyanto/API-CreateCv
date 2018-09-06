@@ -1,19 +1,19 @@
-package id.dezkyanto.javaspring.createcv.service;
+package id.dezkyanto.javaspring.createcv.dao;
 
 import id.dezkyanto.javaspring.createcv.model.PersonalData;
 
-public interface CreateCvService {
+public interface PersonalDataDao {
 
 	public int insert(PersonalData personalData);
-
+	
 	public int update(PersonalData personalData, String idPersonalData);
-
-	public PersonalData getall();
-
-	public PersonalData getById(String idPersonalData);
-
+	
+	public PersonalDataDao getall();
+	
+	public PersonalDataDao getById(String idPersonalData);
+	
 	public int removeById(String idPersonalData);
-
+	
 	public int removeAll();
-
+	
 }
