@@ -1,5 +1,6 @@
 package id.dezkyanto.javaspring.createcv.service.impl;
 
+import java.util.List;
 import org.springframework.stereotype.Service;
 import id.dezkyanto.javaspring.createcv.model.PersonalData;
 import id.dezkyanto.javaspring.createcv.service.CreateCvService;
@@ -8,7 +9,7 @@ import id.dezkyanto.javaspring.createcv.service.CreateCvService;
 public class CreateCvServiceImpl implements CreateCvService {
 
 	@Override
-	public int insert(PersonalData personalData) {
+	public int insert(List<PersonalData> personalData) {
 
 		return 0;
 	}
