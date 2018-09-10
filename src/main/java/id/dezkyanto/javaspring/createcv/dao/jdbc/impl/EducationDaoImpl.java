@@ -1,10 +1,10 @@
-package id.dezkyanto.javaspring.createcv.dao.impl;
+package id.dezkyanto.javaspring.createcv.dao.jdbc.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-import id.dezkyanto.javaspring.createcv.dao.PersonalDataDao;
+import id.dezkyanto.javaspring.createcv.dao.jdbc.PersonalDataDao;
 import id.dezkyanto.javaspring.createcv.model.PersonalDataModel;
 
 @Transactional

@@ -1,4 +1,4 @@
-package id.dezkyanto.javaspring.createcv.dao;
+package id.dezkyanto.javaspring.createcv.dao.jdbc;
 
 import java.util.List;
 import id.dezkyanto.javaspring.createcv.model.OrganizationModel;
