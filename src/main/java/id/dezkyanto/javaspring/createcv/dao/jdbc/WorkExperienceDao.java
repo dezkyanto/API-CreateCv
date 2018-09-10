@@ -5,16 +5,16 @@ import id.dezkyanto.javaspring.createcv.model.WorkExperienceModel;
 
 public interface WorkExperienceDao {
 
-	public int insert(List<WorkExperienceModel> workExperience);
+	public int insert(List<WorkExperienceModel> workExperience, String idPersonalData);
 
-	public int update(List<WorkExperienceModel> workExperience, String idWorkExperience);
+	public int update(List<WorkExperienceModel> workExperience, String idPersonalData);
 
-	public List<WorkExperienceModel> getall();
+	public List<WorkExperienceModel> getById(String idPersonalData);
 
-	public List<WorkExperienceModel> getById(String idWorkExperience);
+	public int removeById(List<WorkExperienceModel> idPersonalData);
 
-	public int removeById(List<WorkExperienceModel> idWorkExperience);
-
-	public int removeAll();
+	public int removeByIdWorkExperience(String id);
 	
+	public int removeAll();
+
 }

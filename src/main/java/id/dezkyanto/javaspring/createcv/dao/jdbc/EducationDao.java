@@ -5,16 +5,16 @@ import id.dezkyanto.javaspring.createcv.model.EducationModel;
 
 public interface EducationDao {
 
-    public int insert(List<EducationModel> education);
+	public int insert(List<EducationModel> education, String idPersonalData);
+
+	public int update(List<EducationModel> education, String idPersonalData);
+
+	public List<EducationModel> getById(String idPersonalData);
+
+	public int removeById(String idPersonalData);
 	
-	public int update(List<EducationModel> education, String idEducation);
-	
-	public List<EducationModel> getall();
-	
-	public List<EducationModel> getById(String idEducation);
-	
-	public int removeById(List<EducationModel> idEducation);
-	
+	public int removeByIdEducation(String id);
+
 	public int removeAll();
-	
+
 }

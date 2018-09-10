@@ -17,6 +17,7 @@ public interface CreateCvService {
 
 	public int removeAll();
 	
-	public String test();
+	public String createTable();
+	
 
 }

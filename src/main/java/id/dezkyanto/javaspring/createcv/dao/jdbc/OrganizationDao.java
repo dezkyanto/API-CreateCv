@@ -5,15 +5,16 @@ import id.dezkyanto.javaspring.createcv.model.OrganizationModel;
 
 public interface OrganizationDao {
 
-    public int insert(List<OrganizationModel> organization);
+    public int insert(List<OrganizationModel> organization,String idPersonalData);
 	
-	public int update(List<OrganizationModel> organization, String idOrganization);
+	public int update(List<OrganizationModel> organization, String idPersonalData);
 	
-	public List<OrganizationModel> getall();
 	
-	public List<OrganizationModel> getById(String idOrganization);
+	public List<OrganizationModel> getById(String idPersonalData);
 	
-	public int removeById(List<OrganizationModel> idOrganization);
+	public int removeById(String idPersonalData);
+	
+	public int removeByIdOrganization(String id);
 	
 	public int removeAll();
 	

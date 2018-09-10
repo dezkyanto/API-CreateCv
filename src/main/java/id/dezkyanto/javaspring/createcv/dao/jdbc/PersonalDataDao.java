@@ -1,10 +1,11 @@
 package id.dezkyanto.javaspring.createcv.dao.jdbc;
 
+import java.util.List;
 import id.dezkyanto.javaspring.createcv.model.PersonalDataModel;
 
 public interface PersonalDataDao {
 
-	public int insert(PersonalDataModel personalData);
+	public int insert(List<PersonalDataModel> personalData, String[] idPersonalData);
 	
 	public int update(PersonalDataModel personalData, String idPersonalData);
 	

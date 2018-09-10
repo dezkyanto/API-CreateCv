@@ -22,13 +22,15 @@ public class CreateCvController {
 	private CreateCvService createCvService;
 
 	@PostMapping("insert")
-	public int insert(@RequestBody List<PersonalDataModel> personalData) {
-		return createCvService.insert(personalData);
+	public String insert(@RequestBody List<PersonalDataModel> personalData) {
+		int count = createCvService.insert(personalData);
+		return "inserted : " + count;
 	}
 
 	@PutMapping("update/{id}")
-	public int update(@RequestBody PersonalDataModel personalData, @PathVariable("id") String idPersonalData) {
-		return createCvService.update(personalData, idPersonalData);
+	public String update(@RequestBody PersonalDataModel personalData, @PathVariable("id") String idPersonalData) {
+		int count = createCvService.update(personalData, idPersonalData);
+		return "updated : " + count;
 	}
 
 	@GetMapping("get-all")
@@ -42,18 +44,20 @@ public class CreateCvController {
 	}
 
 	@DeleteMapping("remove-id/{id}")
-	public int removeById(@PathVariable("id") String idPersonalData) {
-		return createCvService.removeById(idPersonalData);
+	public String removeById(@PathVariable("id") String idPersonalData) {
+		int count = createCvService.removeById(idPersonalData);
+		return "removed : " + count;
 	}
 
 	@DeleteMapping("remove-all")
-	public int removeAll() {
-		return createCvService.removeAll();
+	public String removeAll() {
+		int count = createCvService.removeAll();
+		return "removed : " + count;
 	}
-	
-	@GetMapping("test")
-	public String test() {
-		return createCvService.test();
+
+	@GetMapping("create-table")
+	public String createTable() {
+		return createCvService.createTable();
 	}
 
 }

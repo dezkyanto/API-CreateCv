@@ -9,8 +9,15 @@ public class OrganizationMapper implements RowMapper<OrganizationModel> {
 
 	@Override
 	public OrganizationModel mapRow(ResultSet rs, int rowNum) throws SQLException {
+
 		OrganizationModel organization = new OrganizationModel();
+		organization.setOrganizationName(rs.getString("nama_organisasi"));
+		organization.setStart(rs.getDate("start"));
+		organization.setEnd(rs.getDate("endd"));
+		organization.setDescription(rs.getString("deskripsi"));
+
 		return organization;
 	}
 
 }
+

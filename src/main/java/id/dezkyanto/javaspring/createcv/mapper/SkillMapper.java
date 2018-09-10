@@ -9,7 +9,12 @@ public class SkillMapper implements RowMapper<SkillModel>{
 
 	@Override
 	public SkillModel mapRow(ResultSet rs, int rowNum) throws SQLException {
+		
 		SkillModel skill = new SkillModel();
+		skill.setSkill(rs.getString("skill"));
+		skill.setPercentage(rs.getString("persentase"));
+		skill.setDescription(rs.getString("deskripsi"));
+	
 		return skill;
 	}
 
