@@ -1,4 +1,4 @@
-# Pentunjuk penggunaan
+# How to run : 
   
   + mvn install 
   + cd target/

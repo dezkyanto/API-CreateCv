@@ -7,7 +7,6 @@ import org.springframework.transaction.annotation.Transactional;
 import id.dezkyanto.javaspring.createcv.dao.PersonalDataDao;
 import id.dezkyanto.javaspring.createcv.model.PersonalDataModel;
 
-
 @Transactional
 @Repository
 public class SkillDaoImpl implements PersonalDataDao{

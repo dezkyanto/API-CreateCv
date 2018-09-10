@@ -3,7 +3,6 @@ package id.dezkyanto.javaspring.createcv.dao;
 import java.util.List;
 import id.dezkyanto.javaspring.createcv.model.OrganizationModel;
 
-
 public interface OrganizationDao {
 
     public int insert(List<OrganizationModel> organization);

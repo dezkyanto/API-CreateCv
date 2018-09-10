@@ -7,17 +7,16 @@ import org.springframework.transaction.annotation.Transactional;
 import id.dezkyanto.javaspring.createcv.dao.PersonalDataDao;
 import id.dezkyanto.javaspring.createcv.model.PersonalDataModel;
 
-
 @Transactional
 @Repository
 public class EducationDaoImpl implements PersonalDataDao{
 
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
+	
 
 	@Override
 	public int insert(PersonalDataModel personalData) {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 
