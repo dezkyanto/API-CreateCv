@@ -14,7 +14,7 @@ import id.dezkyanto.javaspring.createcv.model.PersonalDataModel;
 import id.dezkyanto.javaspring.createcv.service.CreateCvService;
 
 @RestController
-//@CrossOrigin(origins = "*", maxAge = 3600)
+// @CrossOrigin(origins = "*", maxAge = 3600)
 @RequestMapping("cv")
 public class CreateCvController {
 
